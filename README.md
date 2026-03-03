@@ -50,9 +50,7 @@ $ git commit -m"added README.md"
 $ git push origin master
 ```
 
-Добавить на сервисе **GitHub** в репозитории **lab02** файл **.gitignore**
-со следующем содержимом:
-
+5. Добавляем на сервисе **GitHub** в репозитории **lab02** файл **.gitignore** со следующем содержимом:
 ```sh
 *build*/
 *install*/
@@ -60,6 +58,7 @@ $ git push origin master
 .idea/
 ```
 
+6. 
 ```sh
 $ git pull origin master
 $ git log
