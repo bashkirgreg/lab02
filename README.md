@@ -58,12 +58,13 @@ $ git push origin master
 .idea/
 ```
 
-6. 
+6. Скачиваем свежие изменения с удалённого репозитория и делаем проверку журнала изменений:
 ```sh
 $ git pull origin master
 $ git log
 ```
 
+7. Cоздаём структуру проекта, состоящую из трёх директорий (`sources`, `include`, `examples`), а затем поместили в директорию `sources` файл `print.cpp`:
 ```sh
 $ mkdir sources
 $ mkdir include
@@ -83,6 +84,7 @@ void print(const std::string& text, std::ofstream& out)
 EOF
 ```
 
+8. Создаём заголовочный файл `print.hpp`:
 ```sh
 $ cat > include/print.hpp <<EOF
 #include <fstream>
@@ -94,6 +96,7 @@ void print(const std::string& text, std::ostream& out = std::cout);
 EOF
 ```
 
+9. Создаём пример программы `example1.cpp`:
 ```sh
 $ cat > examples/example1.cpp <<EOF
 #include <print.hpp>
@@ -105,6 +108,7 @@ int main(int argc, char** argv)
 EOF
 ```
 
+10. Создаём пример программы `example2.cpp`
 ```sh
 $ cat > examples/example2.cpp <<EOF
 #include <print.hpp>
@@ -119,10 +123,12 @@ int main(int argc, char** argv)
 EOF
 ```
 
+11. Редактируем файл `README.md`:
 ```sh
 $ edit README.md
 ```
 
+12. Проверяем состояние репозитория, добавляем все изменения, фиксируем их коммитом с сообщением и отправляем на удалённый сервер:
 ```sh
 $ git status
 $ git add .
