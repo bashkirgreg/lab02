@@ -138,6 +138,7 @@ $ git push origin master
 
 ## Report
 
+1. Клонируем репозиторий лабораторной работы №2, создаём директорию для отчёта, копируем туда файл README.md, редактируем его и публикуем на GitHub Gists:
 ```sh
 $ cd ~/workspace/
 $ export LAB_NUMBER=02
